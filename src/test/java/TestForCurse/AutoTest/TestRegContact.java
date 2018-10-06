@@ -35,6 +35,7 @@ public class TestRegContact {
 		driver.findElement(DataForTest.findFieldLastName).sendKeys(Parameters.lastNameForReg);
 		driver.findElement(DataForTest.findButtonSave).click();
 		driver.switchTo().defaultContent();
+
 		WebElement exit = wait.until(ExpectedConditions.presenceOfElementLocated(DataForTest.findButtonLogout));
 		exit.click();
 	}
@@ -46,7 +47,7 @@ public class TestRegContact {
 		driver.findElement(DataForTest.findFieldPassword).clear();
 		driver.findElement(DataForTest.findFieldPassword).sendKeys(Parameters.password);
 		driver.findElement(DataForTest.findButtonLogin).click();
-		driver.findElement(By.id("R0")).click();
+		findTableReg(DataForTest.findNameContact).click();
 		driver.switchTo().frame("popup");
 		driver.findElement(DataForTest.findButtonRemove).click();
 		driver.switchTo().defaultContent();
@@ -57,27 +58,16 @@ public class TestRegContact {
 	public static void close(){
 		driver.close();
 	}
-	public String findTableReg(By elem){
-			List<WebElement> form = new ArrayList<WebElement>();
+	public WebElement findTableReg(By elem){
+		WebElement foundElement;
 			List<WebElement> tbody = new ArrayList<WebElement>();
 			tbody = driver.findElements(elem);
-			List<WebElement> tr = new ArrayList<WebElement>();
-			List<WebElement> name = new ArrayList<WebElement>();
-			System.out.println(form.size());
-			for (int i = 0; i <form.size() ; i++) {
-				tr = form.get(i).findElements(By.xpath(".//tr/td"));
-				for (int j = 0; j <tr.size() ; j++) {
-					name = tr.get(j).findElements(By.xpath("/strong"));
-					for (int k = 0; k <name.size() ; k++) {
-						if(name.get(k).getText().contains("Evgeniy")) {
-							return name.get(k).getText().toString();
-						}
-						else {
-							return "Not found";
-						}
-					}
-				}
+		for (int i = 0; i <tbody.size() ; i++) {
+			if (tbody.get(i).getText().contains("Evgeniy")) {
+
+				return foundElement=tbody.get(i);
 			}
-			return "Not found";
+		}
+		return null;
 	}
 }
