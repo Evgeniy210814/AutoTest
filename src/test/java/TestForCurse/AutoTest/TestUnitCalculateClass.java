@@ -43,6 +43,6 @@ public class TestUnitCalculateClass {
 	}
 	@Parameterized.Parameters (name ="{index}:a= {0},b= {1},expres= {2}")
 	public static Collection numbers () {
-		return Arrays.asList(new Object[][] {{1,2,3},{4,5,9},{4,2,6}});
+		return Arrays.asList(new Object[][] {{1,2,3},{4,5,10},{4,2,6}});
 		};
 }
