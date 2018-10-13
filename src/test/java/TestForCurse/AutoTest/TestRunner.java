@@ -14,11 +14,13 @@ public class TestRunner {
 		
 		Result result = JUnitCore.runClasses(TestUnitCalculateClass.class);
 		for(Failure failure:result.getFailures()){
-			System.out.println(failure.toString());			
+			logger.error(failure.toString());
+			//System.out.println(failure.toString());
 		}
 		logger.debug("a");
 		result.wasSuccessful();
 		result.getRunCount();
+
 	}
 
 }

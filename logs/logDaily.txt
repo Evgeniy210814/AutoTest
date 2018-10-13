@@ -1,0 +1,4 @@
+13 окт. 2018 20:08:32,332 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
+13 окт. 2018 20:08:32,333 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+13 окт. 2018 20:11:18,639 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
+13 окт. 2018 20:11:18,647 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a

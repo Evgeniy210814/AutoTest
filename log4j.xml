@@ -1,0 +1,140 @@
+{\rtf1\ansi\ansicpg1251\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Italic;}
+{\colortbl;\red255\green255\blue255;\red0\green128\blue128;\red63\green127\blue127;\red127\green0\blue127;
+\red42\green0\blue255;\red128\green128\blue128;\red63\green127\blue95;\red63\green95\blue191;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c50196\c50196;\csgenericrgb\c24706\c49804\c49804;\csgenericrgb\c49804\c0\c49804;
+\csgenericrgb\c16471\c0\c100000;\csgenericrgb\c50196\c50196\c50196;\csgenericrgb\c24706\c49804\c37255;\csgenericrgb\c24706\c37255\c74902;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 <?\cf3 xml\cf0  \cf4 version\cf0 =
+\f1\i \cf5 "1.0"
+\f0\i0 \cf0  \cf4 encoding\cf0 =
+\f1\i \cf5 "UTF-8"
+\f0\i0 \cf2 ?>\cf0 \
+\cf2 <!\cf3 DOCTYPE\cf0  \cf2 log4j:configuration\cf0   \cf6 SYSTEM\cf0  \cf7 "log4j.dtd"\cf2 >\cf0 \
+\cf2 <\cf3 log4j:configuration\cf0  \cf4 debug\cf0 =
+\f1\i \cf5 "false"
+\f0\i0 \cf0  \cf4 xmlns:log4j\cf0 =
+\f1\i \cf5 "http://jakarta.apache.org/log4j/"
+\f0\i0 \cf2 >\cf0 \
+	\cf2 <\cf3 appender\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "TxtAppender"
+\f0\i0 \cf0  \cf4 class\cf0 =
+\f1\i \cf5 "org.apache.log4j.RollingFileAppender"
+\f0\i0 \cf2 >\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "Encoding"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "UTF-8"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "File"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "logs/log.txt"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "MaximumFileSize"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "400"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "MaxBackupIndex"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "3"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 layout\cf0  \cf4 class\cf0 =
+\f1\i \cf5 "org.apache.log4j.PatternLayout"
+\f0\i0 \cf2 >\cf0 \
+			\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "ConversionPattern"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "%d\{DATE\} [%t] %p %c\{5\} method:%M numbString:%L message:%m%n"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 </\cf3 layout\cf2 >\cf0 \
+	\cf2 </\cf3 appender\cf2 >\cf0 \
+	\cf2 <\cf3 appender\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "TxtAppenderDaily"
+\f0\i0 \cf0  \cf4 class\cf0 =
+\f1\i \cf5 "org.apache.log4j.DailyRollingFileAppender"
+\f0\i0 \cf2 >\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "Encoding"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "UTF-8"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "File"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "logs/logDaily.txt"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "Append"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "true"
+\f0\i0 \cf2 />\cf0  \cf8 <!-- \ul \uc0\u1087 \u1088 \u1086 \u1076 \u1086 \u1083 \u1078 \u1077 \u1085 \u1080 \u1077 \ulnone  \ul \uc0\u1079 \u1072 \u1087 \u1080 \u1089 \u1080 \ulnone  \uc0\u1074  \ul \uc0\u1092 \u1072 \u1081 \u1083 \ulnone  -->\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "DatePattern"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "'.'HH:mm'.log'"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 layout\cf0  \cf4 class\cf0 =
+\f1\i \cf5 "org.apache.log4j.PatternLayout"
+\f0\i0 \cf2 >\cf0 \
+			\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "ConversionPattern"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "%d\{DATE\} [%t] %p %c\{5\} message:%m%n"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 </\cf3 layout\cf2 >\cf0 \
+	\cf2 </\cf3 appender\cf2 >\cf0 \
+	\cf2 <\cf3 appender\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "Console"
+\f0\i0 \cf0  \cf4 class\cf0 =
+\f1\i \cf5 "org.apache.log4j.ConsoleAppender"
+\f0\i0 \cf2 >\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "Encoding"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "UTF-8"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "Target"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "System.out"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 layout\cf0  \cf4 class\cf0 =
+\f1\i \cf5 "org.apache.log4j.PatternLayout"
+\f0\i0 \cf2 >\cf0 \
+			\cf2 <\cf3 param\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "ConversionPattern"
+\f0\i0 \cf0  \cf4 value\cf0 =
+\f1\i \cf5 "%d\{DATE\} %p message:%m%n"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 </\cf3 layout\cf2 >\cf0 \
+	\cf2 </\cf3 appender\cf2 >\cf0 \
+	\cf2 <\cf3 logger\cf0  \cf4 name\cf0 =
+\f1\i \cf5 "Site.myFirstMavenProject.PageLoginJunit5"
+\f0\i0 \cf0  \cf4 additivity\cf0 =
+\f1\i \cf5 "false"
+\f0\i0 \cf2 >\cf0 \
+	    \cf2 <\cf3 level\cf0  \cf4 value\cf0  =
+\f1\i \cf5 "debug"
+\f0\i0 \cf0  \cf2 />\cf0  \
+	    \cf2 <\cf3 appender-ref\cf0  \cf4 ref\cf0 =
+\f1\i \cf5 "TxtAppenderDaily"
+\f0\i0 \cf0  \cf2 />\cf0  \
+	\cf2 </\cf3 logger\cf2 >\cf0 \
+	\cf2 <\cf3 root\cf2 >\cf0 \
+		\cf2 <\cf3 priority\cf0  \cf4 value\cf0 =
+\f1\i \cf5 "INFO"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 appender-ref\cf0  \cf4 ref\cf0 =
+\f1\i \cf5 "TxtAppender"
+\f0\i0 \cf2 />\cf0 \
+		\cf2 <\cf3 appender-ref\cf0  \cf4 ref\cf0 =
+\f1\i \cf5 "Console"
+\f0\i0 \cf2 />\cf0 \
+	\cf2 </\cf3 root\cf2 >\cf0 \
+\cf2 </\cf3 log4j:configuration\cf2 >}
