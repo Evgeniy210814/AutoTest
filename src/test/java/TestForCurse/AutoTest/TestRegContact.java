@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class TestRegContact {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
-	//@BeforeClass
+	@BeforeClass
 	public static void start() {
 			//System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
 			driver = new ChromeDriver();
@@ -26,7 +26,7 @@ public class TestRegContact {
 			wait = new WebDriverWait(driver, 3);
 			driver.navigate().to(Parameters.url);
 	}
-	//@Test
+	@Test
 	public void testRegContatct() throws InterruptedException {
 
 		driver.findElement(DataForTest.findFieldLogin).sendKeys(Parameters.email);
@@ -42,7 +42,7 @@ public class TestRegContact {
 		WebElement exit = wait.until(ExpectedConditions.presenceOfElementLocated(DataForTest.findButtonLogout));
 		exit.click();
 	}
-	//@Test
+	@Test
 	public void testRemoveContatct() throws InterruptedException {
 		driver.navigate().to(Parameters.url);
 		driver.findElement(DataForTest.findFieldLogin).clear();
@@ -57,7 +57,7 @@ public class TestRegContact {
 		WebElement exit = wait.until(ExpectedConditions.presenceOfElementLocated(DataForTest.findButtonLogout));
 		exit.click();
 	}
-	//@AfterClass
+	@AfterClass
 	public static void close(){
 		driver.close();
 	}
