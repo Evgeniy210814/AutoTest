@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" verbose="2">
+
+  <test  name="Default test">
+  <groups>
+  	<run>
+  		<include name="smoke"/>
+  	</run>
+  </groups>
+  <packages>
+	<package name="zan"/>
+		</packages>
+   <classes>
+    <class name="zan.Test1">
+    	<methods>
+    		<include name="test1"/>
+    	</methods>
+    </class>
+    <class name="zan.Test2"/>
+    <class name="zan.Test3"/>
+  </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
