@@ -10,7 +10,7 @@ import org.junit.runner.notification.Failure;
 
 public class TestRunner {
 	private static final Logger logger=Logger.getLogger(TestRunner.class);
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		
 		Result result = JUnitCore.runClasses(TestUnitCalculateClass.class);
 		for(Failure failure:result.getFailures()){
@@ -21,6 +21,6 @@ public class TestRunner {
 		result.wasSuccessful();
 		result.getRunCount();
 
-	}*/
+	}
 
 }

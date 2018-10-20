@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Before;
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,11 +19,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+@RunWith(Parameterized.class)
 public class TestRegContact {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
 	@BeforeClass
-	public static void start() {
+	public void start() {
 			//System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
@@ -58,7 +65,7 @@ public class TestRegContact {
 		exit.click();
 	}
 	@AfterClass
-	public static void close(){
+	public void close(){
 		driver.close();
 	}
 	public WebElement findTableReg(By elem){

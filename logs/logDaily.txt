@@ -10,3 +10,26 @@
 14 окт 2018 18:40:12,999 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
 14 окт 2018 18:43:44,330 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
 14 окт 2018 18:43:44,349 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:24:40,829 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
+20 окт 2018 12:24:40,829 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:29:59,305 [main] ERROR TestForCurse.AutoTest.TestRunner message:testDiv[0:a= 1,b= 2,expres= 3](TestForCurse.AutoTest.TestUnitCalculateClass): / by zero
+20 окт 2018 12:29:59,305 [main] ERROR TestForCurse.AutoTest.TestRunner message:testDiv[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): / by zero
+20 окт 2018 12:29:59,305 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
+20 окт 2018 12:29:59,305 [main] ERROR TestForCurse.AutoTest.TestRunner message:testDiv[2:a= 4,b= 2,expres= 6](TestForCurse.AutoTest.TestUnitCalculateClass): / by zero
+20 окт 2018 12:29:59,305 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:30:31,795 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
+20 окт 2018 12:30:31,795 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:30:44,187 [main] ERROR TestForCurse.AutoTest.TestRunner message:initializationError(TestForCurse.AutoTest.TestUnitCalculateClass): Test class should have exactly one public zero-argument constructor
+20 окт 2018 12:30:44,187 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:30:55,232 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
+20 окт 2018 12:30:55,232 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:33:24,332 [main] ERROR TestForCurse.AutoTest.TestRunner message:initializationError(TestForCurse.AutoTest.TestRegContact): No public static parameters method on class TestForCurse.AutoTest.TestRegContact
+20 окт 2018 12:33:24,347 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:43:16,602 [main] ERROR TestForCurse.AutoTest.TestRunner message:initializationError(TestForCurse.AutoTest.TestRegContact): No public static parameters method on class TestForCurse.AutoTest.TestRegContact
+20 окт 2018 12:43:16,604 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:44:05,921 [main] ERROR TestForCurse.AutoTest.TestRunner message:initializationError(TestForCurse.AutoTest.TestRegContact): No runnable methods
+20 окт 2018 12:44:05,923 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:47:13,185 [main] ERROR TestForCurse.AutoTest.TestRunner message:initializationError(TestForCurse.AutoTest.TestRegContact): No public static parameters method on class TestForCurse.AutoTest.TestRegContact
+20 окт 2018 12:47:13,194 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
+20 окт 2018 12:52:02,430 [main] ERROR TestForCurse.AutoTest.TestRunner message:testSum[1:a= 4,b= 5,expres= 10](TestForCurse.AutoTest.TestUnitCalculateClass): expected:<10> but was:<9>
+20 окт 2018 12:52:02,439 [main] DEBUG TestForCurse.AutoTest.TestRunner message:a
