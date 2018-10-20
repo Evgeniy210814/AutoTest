@@ -5,20 +5,22 @@
   <test  name="Default test">
   <groups>
   	<run>
-  		<include name="smoke"/>
+  		<include name="log"/>
+  		<include name="add"/>
+  		
   	</run>
   </groups>
-  <packages>
-	<package name="zan"/>
-		</packages>
+  <!-- <packages>
+	<package name="TestForCurse.AutoTest"/>
+		</packages> -->
+		
    <classes>
-    <class name="zan.Test1">
-    	<methods>
+    <class name="TestForCurse.AutoTest.TestRegContact">
+    	<!-- <methods>
     		<include name="test1"/>
-    	</methods>
-    </class>
-    <class name="zan.Test2"/>
-    <class name="zan.Test3"/>
+    	</methods> -->
+    </class>        
   </classes>
+  
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->
