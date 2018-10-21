@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite" verbose="2">
+<test  name="Default suite">
+<parameter name="driver-name" value="chrome"/>
+ <classes>
+    <class name="TestForCurse.AutoTest.TestRegContact">
+    	<!-- <methods>
+    		<include name="test1"/>
+    	</methods> -->
+    </class>        
+  </classes>
+</test>
+</suite>

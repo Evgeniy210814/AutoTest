@@ -3,6 +3,7 @@ package TestForCurse.AutoTest;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNotEquals;
@@ -26,27 +27,28 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestRegContact {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
-	
+	@Parameters("driver-name")
 	@BeforeClass(groups = "log")
-	public static void start() {
-			System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
-			driver = new ChromeDriver();
+	public static void start(String browserType) {
+			//System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+			driver=getDriver(browserType);
 			driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 			wait = new WebDriverWait(driver, 3);
-			driver.navigate().to(Parameters.url);
+			driver.navigate().to(ParametersTest.url);
 	}
-	@Test(groups = {"log","add"},priority = 1)
-	public void logIn() {
-		driver.findElement(DataForTest.findFieldLogin).sendKeys(Parameters.email);
-		driver.findElement(DataForTest.findFieldPassword).sendKeys(Parameters.password);
+	@Test(groups = {"log","add"},priority = 1, dataProvider="myDataForLogin",dataProviderClass = TestDate_2.class)
+	public void logIn(String login, String pass) {
+		driver.findElement(DataForTest.findFieldLogin).sendKeys(login);
+		driver.findElement(DataForTest.findFieldPassword).sendKeys(pass);
 	}
+	
 	@Test(groups = "add",priority = 2)
-	public void testRegContatct() throws InterruptedException {		
+	public void testRegContatct() throws InterruptedException {
 		driver.findElement(DataForTest.findButtonLogin).click();
 		driver.findElement(DataForTest.findButtonContact).click();
 		driver.switchTo().frame("popup");
-		driver.findElement(DataForTest.findFieldName).sendKeys(Parameters.nameForReg);
-		driver.findElement(DataForTest.findFieldLastName).sendKeys(Parameters.lastNameForReg);
+		driver.findElement(DataForTest.findFieldName).sendKeys(ParametersTest.nameForReg);
+		driver.findElement(DataForTest.findFieldLastName).sendKeys(ParametersTest.lastNameForReg);
 		driver.findElement(DataForTest.findButtonSave).click();
 		driver.switchTo().defaultContent();
 		WebElement exit = wait.until(ExpectedConditions.presenceOfElementLocated(DataForTest.findButtonLogout));
@@ -56,9 +58,9 @@ public class TestRegContact {
 	public void testRemoveContatct() throws InterruptedException {
 		//driver.navigate().to(Parameters.url);
 		driver.findElement(DataForTest.findFieldLogin).clear();
-		driver.findElement(DataForTest.findFieldLogin).sendKeys(Parameters.email);
+		driver.findElement(DataForTest.findFieldLogin).sendKeys(ParametersTest.email);
 		driver.findElement(DataForTest.findFieldPassword).clear();
-		driver.findElement(DataForTest.findFieldPassword).sendKeys(Parameters.password);
+		driver.findElement(DataForTest.findFieldPassword).sendKeys(ParametersTest.password);
 		driver.findElement(DataForTest.findButtonLogin).click();
 		findTableReg(DataForTest.findNameContact).click();
 		driver.switchTo().frame("popup");
@@ -70,9 +72,9 @@ public class TestRegContact {
 	@Test (priority=4)
 	public void findUsers() {
 		driver.findElement(DataForTest.findFieldLogin).clear();
-		driver.findElement(DataForTest.findFieldLogin).sendKeys(Parameters.email);
+		driver.findElement(DataForTest.findFieldLogin).sendKeys(ParametersTest.email);
 		driver.findElement(DataForTest.findFieldPassword).clear();
-		driver.findElement(DataForTest.findFieldPassword).sendKeys(Parameters.password);
+		driver.findElement(DataForTest.findFieldPassword).sendKeys(ParametersTest.password);
 		driver.findElement(DataForTest.findButtonLogin).click();
 		
 		try {
@@ -87,6 +89,14 @@ public class TestRegContact {
 	@AfterClass(groups = "log")
 	public static void close(){
 		driver.close();
+	}
+	public static WebDriver getDriver(String browserType) {
+		 WebDriver driver = null;
+		 if(browserType.equals("chrome")) {
+			 System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+			 driver = new ChromeDriver();
+		 }
+		 return driver;
 	}
 	public WebElement findTableReg(By elem){
 		WebElement foundElement;
