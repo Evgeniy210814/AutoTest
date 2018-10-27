@@ -1,23 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[3]//img[1]]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: /html[1]/body[1]/form[1]/table[1]/tbody[1]/tr[1]/td[2]/input[2]]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //form[@name='THEFORM']/table/tbody/tr]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: /html[1]/body[1]/form[1]/table[1]/tbody[1]/tr[1]/td[2]/input[1]]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+    </line>
+    <line>
+      <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52975" started-at="2018-10-21T17:54:08Z" finished-at="2018-10-21T17:55:01Z">
+  <suite name="Default suite" duration-ms="60195" started-at="2018-10-27T18:12:49Z" finished-at="2018-10-27T18:13:49Z">
     <groups>
       <group name="add">
-        <method signature="TestRegContact.logIn(java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="logIn" class="TestForCurse.AutoTest.TestRegContact"/>
-        <method signature="TestRegContact.testRegContatct()[pri:2, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="testRegContatct" class="TestForCurse.AutoTest.TestRegContact"/>
+        <method signature="TestRegContact.logIn(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="logIn" class="TestForCurse.AutoTest.TestRegContact"/>
+        <method signature="TestRegContact.testRegContatct(java.lang.String, java.lang.String)[pri:2, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="testRegContatct" class="TestForCurse.AutoTest.TestRegContact"/>
       </group> <!-- add -->
       <group name="log">
-        <method signature="TestRegContact.logIn(java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="logIn" class="TestForCurse.AutoTest.TestRegContact"/>
+        <method signature="TestRegContact.logIn(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="logIn" class="TestForCurse.AutoTest.TestRegContact"/>
       </group> <!-- log -->
       <group name="remove">
-        <method signature="TestRegContact.testRemoveContatct()[pri:3, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="testRemoveContatct" class="TestForCurse.AutoTest.TestRegContact"/>
+        <method signature="TestRegContact.testRemoveContact()[pri:3, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="testRemoveContact" class="TestForCurse.AutoTest.TestRegContact"/>
       </group> <!-- remove -->
     </groups>
-    <test name="Default suite" duration-ms="52975" started-at="2018-10-21T17:54:08Z" finished-at="2018-10-21T17:55:01Z">
+    <test name="Default suite" duration-ms="60195" started-at="2018-10-27T18:12:49Z" finished-at="2018-10-27T18:13:49Z">
       <class name="TestForCurse.AutoTest.TestRegContact">
-        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="start" is-config="true" duration-ms="7331" started-at="2018-10-21T17:54:08Z" finished-at="2018-10-21T17:54:16Z">
+        <test-method status="PASS" signature="start(java.lang.String)[pri:0, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="start" is-config="true" duration-ms="9375" started-at="2018-10-27T18:12:49Z" finished-at="2018-10-27T18:12:58Z">
           <params>
             <param index="0">
               <value>
@@ -28,7 +70,82 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="PASS" signature="logIn(java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="logIn" duration-ms="329" started-at="2018-10-21T17:54:16Z" data-provider="myDataForLogin" finished-at="2018-10-21T17:54:16Z">
+        <test-method status="PASS" signature="logIn(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="logIn" duration-ms="8457" started-at="2018-10-27T18:12:58Z" data-provider="myDataForLogin" finished-at="2018-10-27T18:13:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[evgeniy210814@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[devilmaycry]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="logIn(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="logIn" duration-ms="2023" started-at="2018-10-27T18:13:06Z" data-provider="myDataForLogin" finished-at="2018-10-27T18:13:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[evgeniy210814@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vbg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="logIn(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="logIn" duration-ms="2543" started-at="2018-10-27T18:13:08Z" data-provider="myDataForLogin" finished-at="2018-10-27T18:13:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[evgeniy2814@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[devilmaycry]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logIn -->
+        <test-method status="PASS" signature="testRegContatct(java.lang.String, java.lang.String)[pri:2, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="testRegContatct" duration-ms="17218" started-at="2018-10-27T18:13:11Z" data-provider="myDataForLogin" finished-at="2018-10-27T18:13:28Z">
           <params>
             <param index="0">
               <value>
@@ -42,21 +159,47 @@
             </param>
           </params>
           <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logIn -->
-        <test-method status="PASS" signature="testRegContatct()[pri:2, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="testRegContatct" duration-ms="19487" started-at="2018-10-21T17:54:16Z" finished-at="2018-10-21T17:54:36Z">
-          <reporter-output>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[3]//img[1]]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: /html[1]/body[1]/form[1]/table[1]/tbody[1]/tr[1]/td[2]/input[2]]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testRegContatct -->
-        <test-method status="PASS" signature="testRemoveContatct()[pri:3, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="testRemoveContatct" duration-ms="19847" started-at="2018-10-21T17:54:36Z" finished-at="2018-10-21T17:54:55Z">
+        <test-method status="PASS" signature="testRemoveContact()[pri:3, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="testRemoveContact" duration-ms="14903" started-at="2018-10-27T18:13:28Z" finished-at="2018-10-27T18:13:43Z">
           <reporter-output>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //form[@name='THEFORM']/table/tbody/tr]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: /html[1]/body[1]/form[1]/table[1]/tbody[1]/tr[1]/td[2]/input[1]]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testRemoveContatct -->
-        <test-method status="PASS" signature="findUsers()[pri:4, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="findUsers" duration-ms="5842" started-at="2018-10-21T17:54:55Z" finished-at="2018-10-21T17:55:01Z">
+        </test-method> <!-- testRemoveContact -->
+        <test-method status="PASS" signature="findUsers()[pri:4, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="findUsers" duration-ms="5452" started-at="2018-10-27T18:13:43Z" finished-at="2018-10-27T18:13:49Z">
           <reporter-output>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //input[@value='Login']]]]>
+            </line>
+            <line>
+              <![CDATA[Click on element[[ChromeDriver: chrome on XP (1e2ec91d54d2a69f61ba3d7eeeda0085)] -> xpath: //table//td[@class='s9']//a[12]//img[1]]]]>
+            </line>
           </reporter-output>
         </test-method> <!-- findUsers -->
-        <test-method status="PASS" signature="close()[pri:0, instance:TestForCurse.AutoTest.TestRegContact@1fffcd7]" name="close" is-config="true" duration-ms="95" started-at="2018-10-21T17:55:01Z" finished-at="2018-10-21T17:55:01Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:TestForCurse.AutoTest.TestRegContact@11053e1]" name="close" is-config="true" duration-ms="171" started-at="2018-10-27T18:13:49Z" finished-at="2018-10-27T18:13:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

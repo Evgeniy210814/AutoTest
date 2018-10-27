@@ -22,7 +22,7 @@ public class TestDate_2 {
 			String s = br.readLine();
 			while(s!=null) {
 				String[] str =s.split(",");
-				list.add(new Object[]{str[0],str[1]});
+				list.add(new Object[]{str[0],str[1],str[2]});
 				s=br.readLine();
 			}
 			br.close();

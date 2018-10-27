@@ -8,8 +8,9 @@
         <methods>
           <include name="findUsers"/>
           <include name="testRemoveContatct"/>
+          <include name="logIn" invocation-numbers="2"/>
           <include name="close"/>
-          <include name="testRegContatct"/>
+          <include name="testRegContatct" invocation-numbers="0"/>
           <include name="start"/>
         </methods>
       </class> <!-- TestForCurse.AutoTest.TestRegContact -->
