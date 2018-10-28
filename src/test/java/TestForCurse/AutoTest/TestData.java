@@ -10,7 +10,7 @@ public class TestData {
 	@DataProvider
 	public static Iterator<Object[]> myDataForLogin() {
 		List<Object[]> list = new ArrayList<Object[]>();
-		list.add(new Object[]{"evgeniy210814@gmail.com","devilmaycry"});
+		list.add(new Object[]{"EVGENIY@tut.by","123456"});
 		
 		
 		return list.iterator();

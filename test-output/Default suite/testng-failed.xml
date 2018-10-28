@@ -6,9 +6,8 @@
     <classes>
       <class name="TestForCurse.AutoTest.TestRegContact">
         <methods>
+          <include name="testRemoveContact"/>
           <include name="findUsers"/>
-          <include name="testRemoveContatct"/>
-          <include name="logIn" invocation-numbers="2"/>
           <include name="close"/>
           <include name="testRegContatct" invocation-numbers="0"/>
           <include name="start"/>

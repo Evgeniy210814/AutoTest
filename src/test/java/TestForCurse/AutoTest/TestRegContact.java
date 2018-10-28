@@ -16,6 +16,7 @@ import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -52,7 +53,7 @@ public class TestRegContact {
 			
 	}
 	@Test(groups = {"log","add"},priority = 1, dataProvider="myDataForLogin",dataProviderClass = TestDate_2.class)
-	public void logIn(String login, String pass, String result) {
+	public void logIn(String login, String pass, String result) throws IOException, InterruptedException {
 		if (result.equals("1")) {
 			driver.findElement(DataForTest.findFieldLogin).sendKeys(login);
 			driver.findElement(DataForTest.findFieldPassword).sendKeys(pass);
@@ -74,6 +75,8 @@ public class TestRegContact {
 			driver.findElement(DataForTest.findFieldPassword).clear();
 			driver.findElement(DataForTest.findFieldLogin).sendKeys(login);
 			driver.findElement(DataForTest.findFieldPassword).sendKeys(pass);
+			Thread.sleep(3000);
+			Screen.screenshot(driver);
 			driver.findElement(DataForTest.findButtonLogin).click();
 			Alert alert = driver.switchTo().alert();
 			assertTrue(alert.getText().contains("You are not registered with that Email address"));
