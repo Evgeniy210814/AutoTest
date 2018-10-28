@@ -17,6 +17,8 @@ import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -29,6 +31,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -41,11 +45,11 @@ public class TestRegContact {
 	public static WebDriverEventListener myEvent;
 	@Parameters("driver-name")
 	@BeforeClass(groups = "log")
-	public static void start(String browserType) {
+	public static void start(String browserType) throws MalformedURLException {
 			//System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
-			//driver=getDriver(browserType);
+		driver=getDriver(browserType);
 		myEvent = new Listner();
-		driver = new EventFiringWebDriver(getDriver(browserType)).register(myEvent);
+		//driver = new EventFiringWebDriver(getDriver(browserType)).register(myEvent);
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 3);
 		driver.navigate().to(ParametersTest.url);
@@ -135,11 +139,19 @@ public class TestRegContact {
 	public static void close(){
 		driver.close();
 	}
-	public static WebDriver getDriver(String browserType) {
+	public static WebDriver getDriver(String browserType) throws MalformedURLException {
 		 WebDriver driver = null;
 		 if(browserType.equals("chrome")) {
-			 System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
-			 driver = new ChromeDriver();
+			 //System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+			 //driver = new ChromeDriver();
+			 DesiredCapabilities capability =  DesiredCapabilities.chrome();
+			 driver = new RemoteWebDriver(new URL("http://localhost:4444"),capability);
+		 }
+		 if(browserType.equals("firefox")) {
+			 DesiredCapabilities capability =  DesiredCapabilities.firefox();
+			 driver = new RemoteWebDriver(new URL("http://localhost:4444"),capability);
+			 //System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+			 //driver = new ChromeDriver();
 		 }
 		 return driver;
 	}
